@@ -1,2 +1,3 @@
-def main() -> None:
-    print("Hello from cnn!")
+from cnn.lenet5 import LeNet5
+
+__all__ = ["LeNet5"]

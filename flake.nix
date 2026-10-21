@@ -29,6 +29,8 @@
           };
           shellHook = ''
             export LD_LIBRARY_PATH="${pkgs.lib.makeLibraryPath (with pkgs; [stdenv.cc.cc.lib zlib glib])}:$LD_LIBRARY_PATH"
+            export SSL_CERT_FILE="${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt"
+            export SSL_CERT_DIR="${pkgs.cacert}/etc/ssl/certs"
           '';
         };
       }
