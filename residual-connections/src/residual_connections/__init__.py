@@ -1,2 +1,3 @@
-def main() -> None:
-    print("Hello from residual-connections!")
+from residual_connections.resnet import ResNet
+
+__all__ = ["ResNet"]
